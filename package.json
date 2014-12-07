@@ -1,0 +1,20 @@
+{
+  "name": "func-coffee",
+  "description": "Functional Coffeescript",
+  "version": "0.0.1",
+  "main": "./ext.coffee",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test": "jasmine-node --coffee --verbose spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peking2/func-coffee.git"
+  },
+  "author": "Gary Zhao <garyzhao@live.com>",
+  "license": "BSD",
+  "dependencies": {
+  }
+}
