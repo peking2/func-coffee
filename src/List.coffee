@@ -25,9 +25,7 @@ _swap = (arr, i, j)->
   tmp = arr[i]
   arr[i] = arr[j]
   arr[j] = tmp
-
 _rand = (x)-> Math.floor(Math.random()*x)
-
 Array.prototype.shuffle = ->
   len = this.length
   for i in [0...len]
