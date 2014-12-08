@@ -31,6 +31,13 @@ so you can write more functional Coffeescript codes.
 $ npm install func-coffee
 ```
 
+## How to use it
+
+```coffeescript
+require func-coffee
+[1, 2, 3, 4, 5].shuffle()
+```
+
 ## Unit Test
 
 ```bash
