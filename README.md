@@ -19,6 +19,19 @@ so you can write more functional Coffeescript codes.
 #### Array.prototype.splitAt
 #### Array.prototype.tail
 
+## Installation
+
+```bash
+$ npm install func-coffee
+```
+
+## Unit Test
+
+```bash
+$ jasmine-node --coffee --verbose spec/
+```
+
+
 ## TBD
 #### combinations
 #### contains
