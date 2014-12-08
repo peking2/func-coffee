@@ -34,7 +34,7 @@ $ npm install func-coffee
 ## How to use it
 
 ```coffeescript
-require func-coffee
+require 'func-coffee'
 [1, 2, 3, 4, 5].shuffle()
 ```
 
