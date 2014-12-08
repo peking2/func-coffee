@@ -21,8 +21,8 @@ Object.defineProperty Array.prototype, 'head', get: -> this[0]
 Object.defineProperty Array.prototype, 'init', get: -> this[0...-1]
 Object.defineProperty Array.prototype, 'last', get: -> this[-1..][0]
 
-Array.prototype.max = -> Math.max.apply(null, this)
-Array.prototype.min = -> Math.min.apply(null, this)
+Object.defineProperty Array.prototype, 'max', get: -> Math.max.apply(null, this)
+Object.defineProperty Array.prototype, 'min', get: -> Math.min.apply(null, this)
 
 _swap = (arr, i, j)->
   tmp = arr[i]

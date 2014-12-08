@@ -30,10 +30,8 @@ describe 'List extensions', ->
 
   it 'should find max and min', ->
     arr = [1,2,3,4,5]
-    max=arr.max()
-    min=arr.min()
-    expect(max).toEqual 5
-    expect(min).toEqual 1
+    expect(arr.max).toEqual 5
+    expect(arr.min).toEqual 1
 
   it 'should shuffle', ->
     arr = [1,2,3,4,5,6,7,8]
