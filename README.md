@@ -39,30 +39,30 @@ $ jasmine-node --coffee --verbose spec/
 
 
 ## TBD
-#### combinations
-#### contains
-#### count
-#### distinct
-#### drop
-#### dropRight
-#### dropWhile
-#### endsWith
-#### exists
-#### isEmpty
-#### maxBy
-#### minBy
-#### nonEmpty
-#### partition
-#### permutations
-#### product
-#### startsWith
-#### sum
-#### take
-#### takeRight
-#### takeWhile
-#### union
-#### unzip
-#### zip
+###### combinations
+###### contains
+###### count
+###### distinct
+###### drop
+###### dropRight
+###### dropWhile
+###### endsWith
+###### exists
+###### isEmpty
+###### maxBy
+###### minBy
+###### nonEmpty
+###### partition
+###### permutations
+###### product
+###### startsWith
+###### sum
+###### take
+###### takeRight
+###### takeWhile
+###### union
+###### unzip
+###### zip
 
 
 
