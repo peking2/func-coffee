@@ -17,9 +17,10 @@ Array.prototype.grouped = (k)->
   for i in [0...this.length] by k
     this[i...i+k]
 
-Array.prototype.head = -> this[0]
-Array.prototype.init = -> this[0...-1]
-Array.prototype.last = -> this[-1..][0]
+Object.defineProperty Array.prototype, 'head', get: -> this[0]
+Object.defineProperty Array.prototype, 'init', get: -> this[0...-1]
+Object.defineProperty Array.prototype, 'last', get: -> this[-1..][0]
+
 Array.prototype.max = -> Math.max.apply(null, this)
 Array.prototype.min = -> Math.min.apply(null, this)
 
@@ -35,8 +36,37 @@ Array.prototype.shuffle = ->
     _swap this, i, i+r
   this
 
+Object.defineProperty Array.prototype, 'size', get: -> this.length
+
 Array.prototype.splitAt = (n)-> [this[0...n], this[n..]]
-Array.prototype.tail = -> this[1..-1]
+Object.defineProperty Array.prototype, 'tail', get: -> this[1..-1]
+
+
+#### combinations
+#### contains
+#### count
+#### distinct
+#### drop
+#### dropRight
+#### dropWhile
+#### endsWith
+#### exists
+#### isEmpty
+#### maxBy
+#### minBy
+#### nonEmpty
+#### partition
+#### permutations
+#### product
+#### startsWith
+#### sum
+#### take
+#### takeRight
+#### takeWhile
+#### union
+#### unzip
+#### zip
+
 
 
 

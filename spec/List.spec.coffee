@@ -20,13 +20,13 @@ describe 'List extensions', ->
     expect(res).toEqual [[ 1, 2 ], [ 3, 4 ], [ 5 ]]
 
   it 'has head', ->
-    expect([1,2,3].head()).toEqual 1
+    expect([1,2,3].head).toEqual 1
 
   it 'has init', ->
-    expect([1,2,3].init()).toEqual [1, 2]
+    expect([1,2,3].init).toEqual [1, 2]
 
   it 'has last', ->
-    expect([1,2,3].last()).toEqual 3
+    expect([1,2,3].last).toEqual 3
 
   it 'should find max and min', ->
     arr = [1,2,3,4,5]
@@ -39,6 +39,10 @@ describe 'List extensions', ->
     arr = [1,2,3,4,5,6,7,8]
     expect(arr.shuffle()).not.toBe [1,2,3,4,5,6,7,8]
 
+  it 'has size equals length', ->
+    arr = [1,2,3,4,5]
+    expect(arr.size).toEqual arr.length
+
   it 'splits and flattens array', ->
     res = [1,2,3,4,5].splitAt(3)
     expect(res).toEqual [[1,2,3], [4,5]]
@@ -46,7 +50,7 @@ describe 'List extensions', ->
     expect(res).toEqual [1,2,3,4,5]
 
   it 'has tail', ->
-    expect([1,2,3].tail()).toEqual [2, 3]
+    expect([1,2,3].tail).toEqual [2, 3]
 
 
 

@@ -49,7 +49,6 @@ $ jasmine-node --coffee --verbose spec/
 #### partition
 #### permutations
 #### product
-#### size
 #### startsWith
 #### sum
 #### take
