@@ -32,12 +32,3 @@ Array.prototype.shuffle = ->
     r = _rand len-i
     _swap this, i, i+r
   this
-
-  ###
-  maxBy
-  minBy
-  nonEmpty
-  partition
-  permutations
-  sum
-###
