@@ -8,21 +8,21 @@ so you can write more functional Coffeescript codes.
 ## API
 
 ### Properties
-#### Array.prototype.head
-#### Array.prototype.init
-#### Array.prototype.last
-#### Array.prototype.max
-#### Array.prototype.min
-#### Array.prototype.size
-#### Array.prototype.tail
+###### Array.prototype.head
+###### Array.prototype.init
+###### Array.prototype.last
+###### Array.prototype.max
+###### Array.prototype.min
+###### Array.prototype.size
+###### Array.prototype.tail
 
 ### Methods
-#### Array.prototype.flatMap
-#### Array.prototype.flatten
-#### Array.prototype.groupBy
-#### Array.prototype.grouped
-#### Array.prototype.shuffle
-#### Array.prototype.splitAt
+###### Array.prototype.flatMap
+###### Array.prototype.flatten
+###### Array.prototype.groupBy
+###### Array.prototype.grouped
+###### Array.prototype.shuffle
+###### Array.prototype.splitAt
 
 
 ## Installation
