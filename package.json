@@ -1,7 +1,7 @@
 {
   "name": "func-coffee",
   "description": "Functional Coffeescript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./ext.coffee",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -15,6 +15,5 @@
   },
   "author": "Gary Zhao <garyzhao@live.com>",
   "license": "BSD",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
