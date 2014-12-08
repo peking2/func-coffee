@@ -1,7 +1,7 @@
 func-coffee
 ===========
 
-Implementation of functional data structure [List](http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.List),
+Extensions of Javascript Array to be functional [List](http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.List),
 so you can write more functional Coffeescript codes.
 
 
