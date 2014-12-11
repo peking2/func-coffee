@@ -41,31 +41,13 @@ Object.defineProperty Array.prototype, 'size', get: -> this.length
 Array.prototype.splitAt = (n)-> [this[0...n], this[n..]]
 Object.defineProperty Array.prototype, 'tail', get: -> this[1..-1]
 
+Array.prototype.toMap = ->
+  obj = {}
+  for arr in this
+    obj[arr[0]] = arr[1]
+  obj
 
-#### combinations
-#### contains
-#### count
-#### distinct
-#### drop
-#### dropRight
-#### dropWhile
-#### endsWith
-#### exists
-#### isEmpty
-#### maxBy
-#### minBy
-#### nonEmpty
-#### partition
-#### permutations
-#### product
-#### startsWith
-#### sum
-#### take
-#### takeRight
-#### takeWhile
-#### union
-#### unzip
-#### zip
+Array.prototype.zip = (arr)-> [this[i], arr[i]] for i in [0...Math.min(this.length, arr.length)]
 
 
 

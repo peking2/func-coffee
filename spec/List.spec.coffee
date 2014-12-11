@@ -50,5 +50,9 @@ describe 'List extensions', ->
   it 'has tail', ->
     expect([1,2,3].tail).toEqual [2, 3]
 
+  it 'zip another array', ->
+    arr  = [1,2,3].zip ['a','b','c', 'd']
+    expect(arr).toEqual [[ 1, 'a' ], [ 2, 'b' ], [ 3, 'c' ]]
+    expect(arr.toMap()).toEqual { '1': 'a', '2': 'b', '3': 'c' }
 
 

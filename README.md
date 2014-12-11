@@ -23,6 +23,8 @@ so you can write more functional Coffeescript codes.
 * Array.prototype.grouped
 * Array.prototype.shuffle
 * Array.prototype.splitAt
+* Array.prototype.toMap
+* Array.prototype.zip
 
 
 ## Installation
@@ -70,7 +72,7 @@ $ jasmine-node --coffee --verbose spec/
 ###### takeWhile
 ###### union
 ###### unzip
-###### zip
+
 
 
 
