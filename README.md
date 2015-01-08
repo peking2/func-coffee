@@ -17,6 +17,7 @@ so you can write more functional Coffeescript codes.
 * Array.prototype.tail
 
 ### Methods
+* Array.prototype.distinct
 * Array.prototype.flatMap
 * Array.prototype.flatten
 * Array.prototype.groupBy
@@ -52,7 +53,6 @@ $ jasmine-node --coffee --verbose spec/
 ###### combinations
 ###### contains
 ###### count
-###### distinct
 ###### drop
 ###### dropRight
 ###### dropWhile

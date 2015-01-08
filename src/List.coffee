@@ -1,5 +1,15 @@
 {p} = require '../util/log'
 
+Array.prototype.distinct = ->
+  set = {}
+  res = []
+  for i in this
+    k = JSON.stringify i
+    unless set[k]?
+      res.push i
+      set[k] = true
+  res
+
 Array.prototype.flatMap = (f)->
   this.map(f).reduce (a,b)-> a.concat b
 

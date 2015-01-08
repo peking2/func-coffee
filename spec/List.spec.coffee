@@ -5,6 +5,13 @@ require '../src/List'
 f1 = (input)-> [0..input].map (i)->i+1
 
 describe 'List extensions', ->
+  it 'should return distinct elements', ->
+    res = [1, 2, 3, 1, 2, 3].distinct()
+    expect(res).toEqual [1, 2, 3]
+
+    res = ['a', 'b', 'c', 'a', 'b', 'c'].distinct()
+    expect(res).toEqual ['a', 'b', 'c']
+
   it 'should map and then flat', ->
     res =
       [1, 2, 3]
