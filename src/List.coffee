@@ -1,5 +1,15 @@
 {p} = require '../util/log'
 
+Object.defineProperty Array.prototype, 'head', get: -> this[0]
+Object.defineProperty Array.prototype, 'init', get: -> this[0...-1]
+Object.defineProperty Array.prototype, 'isEmpty', get: -> this.length is 0
+Object.defineProperty Array.prototype, 'last', get: -> this[-1..][0]
+Object.defineProperty Array.prototype, 'max', get: -> Math.max.apply(null, this)
+Object.defineProperty Array.prototype, 'min', get: -> Math.min.apply(null, this)
+Object.defineProperty Array.prototype, 'nonEmpty', get: -> not this.isEmpty
+Object.defineProperty Array.prototype, 'size', get: -> this.length
+Object.defineProperty Array.prototype, 'tail', get: -> this[1..-1]
+
 Array.prototype.distinct = ->
   set = {}
   res = []
@@ -27,13 +37,6 @@ Array.prototype.grouped = (k)->
   for i in [0...this.length] by k
     this[i...i+k]
 
-Object.defineProperty Array.prototype, 'head', get: -> this[0]
-Object.defineProperty Array.prototype, 'init', get: -> this[0...-1]
-Object.defineProperty Array.prototype, 'last', get: -> this[-1..][0]
-
-Object.defineProperty Array.prototype, 'max', get: -> Math.max.apply(null, this)
-Object.defineProperty Array.prototype, 'min', get: -> Math.min.apply(null, this)
-
 _swap = (arr, i, j)->
   tmp = arr[i]
   arr[i] = arr[j]
@@ -46,10 +49,9 @@ Array.prototype.shuffle = ->
     _swap this, i, i+r
   this
 
-Object.defineProperty Array.prototype, 'size', get: -> this.length
-
 Array.prototype.splitAt = (n)-> [this[0...n], this[n..]]
-Object.defineProperty Array.prototype, 'tail', get: -> this[1..-1]
+
+Array.prototype.take = (n)-> this[0...n]
 
 Array.prototype.toMap = ->
   obj = {}

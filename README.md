@@ -10,9 +10,11 @@ so you can write more functional Coffeescript codes.
 ### Properties
 * Array.prototype.head
 * Array.prototype.init
+* Array.prototype.isEmpty
 * Array.prototype.last
 * Array.prototype.max
 * Array.prototype.min
+* Array.prototype.nonEmpty
 * Array.prototype.size
 * Array.prototype.tail
 
@@ -24,6 +26,7 @@ so you can write more functional Coffeescript codes.
 * Array.prototype.grouped
 * Array.prototype.shuffle
 * Array.prototype.splitAt
+* Array.prototype.take
 * Array.prototype.toMap
 * Array.prototype.zip
 
@@ -58,16 +61,14 @@ $ jasmine-node --coffee --verbose spec/
 ###### dropWhile
 ###### endsWith
 ###### exists
-###### isEmpty
+
 ###### maxBy
 ###### minBy
-###### nonEmpty
 ###### partition
 ###### permutations
 ###### product
 ###### startsWith
 ###### sum
-###### take
 ###### takeRight
 ###### takeWhile
 ###### union
