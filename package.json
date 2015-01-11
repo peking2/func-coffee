@@ -1,7 +1,7 @@
 {
   "name": "func-coffee",
   "description": "Functional Coffeescript",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "./ext.coffee",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

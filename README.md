@@ -20,6 +20,7 @@ so you can write more functional Coffeescript codes.
 
 ### Methods
 * Array.prototype.distinct
+* Array.prototype.exists
 * Array.prototype.flatMap
 * Array.prototype.flatten
 * Array.prototype.groupBy
@@ -29,6 +30,9 @@ so you can write more functional Coffeescript codes.
 * Array.prototype.take
 * Array.prototype.toMap
 * Array.prototype.zip
+
+### Coffeescript conventions
+* contains: x in arr
 
 
 ## Installation
@@ -54,14 +58,11 @@ $ jasmine-node --coffee --verbose spec/
 
 ## TBD
 ###### combinations
-###### contains
 ###### count
 ###### drop
 ###### dropRight
 ###### dropWhile
 ###### endsWith
-###### exists
-
 ###### maxBy
 ###### minBy
 ###### partition

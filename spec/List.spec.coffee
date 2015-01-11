@@ -42,6 +42,10 @@ describe 'List methods test', ->
     res = ['a', 'b', 'c', 'a', 'b', 'c'].distinct()
     expect(res).toEqual ['a', 'b', 'c']
 
+  it 'should return true if one element in array satisfies some condition', ->
+    expect([1,2,3].exists (i)->i>2).toEqual true
+    expect([1,2,3].exists (i)->i>3).toEqual false
+
   it 'should map and then flat', ->
     res =
       [1, 2, 3]

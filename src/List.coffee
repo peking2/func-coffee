@@ -20,6 +20,8 @@ Array.prototype.distinct = ->
       set[k] = true
   res
 
+Array.prototype.exists = Array.prototype.some
+
 Array.prototype.flatMap = (f)->
   this.map(f).reduce (a,b)-> a.concat b
 
