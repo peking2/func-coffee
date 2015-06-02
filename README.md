@@ -31,6 +31,8 @@ so you can write more functional Coffeescript codes.
 * Array.prototype.toMap
 * Array.prototype.zip
 
+* Object.prototype.map
+
 ### Coffeescript conventions
 * contains: x in arr
 

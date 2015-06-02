@@ -1,4 +1,4 @@
-{p} = require '../util/log'
+#{p} = require '../util/log'
 
 Object.defineProperty Array.prototype, 'head', get: -> this[0]
 Object.defineProperty Array.prototype, 'init', get: -> this[0...-1]
