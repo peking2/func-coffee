@@ -63,6 +63,18 @@ Array.prototype.toMap = ->
 
 Array.prototype.zip = (arr)-> [this[i], arr[i]] for i in [0...Math.min(this.length, arr.length)]
 
+Array.prototype.dedup = (arrObj, field) ->
+  tmpHashMap = {}
+  _uniq = (obj) ->
+    k = if field? then obj[field] else JSON.stringify(obj)
+    return false if tmpHashMap[k]
+    tmpHashMap[k] = true
+    true
+  obj for obj in arrObj when _uniq(obj)
+
+Array.prototype.filter = (arr) ->
+  (elem for elem in arr when elem?)
+
 
 
 
