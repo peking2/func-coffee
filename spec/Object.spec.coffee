@@ -9,3 +9,4 @@ describe 'Object method tests', ->
       age: 23
     res = obj.map (k,v)-> v
     expect(res).toEqual ['foo', 23]
+
