@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/qwei/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/qwei/.npm/func-coffee/0.0.10/package.tgz', '.' ]
+11 verbose tarball /Users/qwei/.npm/func-coffee/0.0.10/package.tgz
+12 verbose folder .
+13 info prepublish func-coffee@0.0.10
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/qwei/.npm/1f1177db-tar.lock
+16 silly lockFile 8edf27c6-m-func-coffee-0-0-10-package-tgz tar:///Users/qwei/.npm/func-coffee/0.0.10/package.tgz
+17 verbose lock tar:///Users/qwei/.npm/func-coffee/0.0.10/package.tgz /Users/qwei/.npm/8edf27c6-m-func-coffee-0-0-10-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 8edf27c6-m-func-coffee-0-0-10-package-tgz tar:///Users/qwei/.npm/func-coffee/0.0.10/package.tgz
+21 silly lockFile 8edf27c6-m-func-coffee-0-0-10-package-tgz tar:///Users/qwei/.npm/func-coffee/0.0.10/package.tgz
+22 silly lockFile 02dd4c81-i-npm-func-coffee-0-0-10-package /Users/qwei/.npm/func-coffee/0.0.10/package
+23 verbose lock /Users/qwei/.npm/func-coffee/0.0.10/package /Users/qwei/.npm/02dd4c81-i-npm-func-coffee-0-0-10-package.lock
+24 silly lockFile 02dd4c81-i-npm-func-coffee-0-0-10-package /Users/qwei/.npm/func-coffee/0.0.10/package
+25 silly lockFile 02dd4c81-i-npm-func-coffee-0-0-10-package /Users/qwei/.npm/func-coffee/0.0.10/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'func-coffee',
+28 silly publish   description: 'Functional Coffeescript',
+28 silly publish   version: '0.0.10',
+28 silly publish   main: './ext.coffee',
+28 silly publish   publishConfig: { registry: 'https://registry.npmjs.org/' },
+28 silly publish   scripts: { test: 'jasmine-node --coffee --verbose spec/' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/peking2/func-coffee.git' },
+28 silly publish   author: { name: 'Gary Zhao', email: 'garyzhao@live.com' },
+28 silly publish   license: 'BSD',
+28 silly publish   dependencies: {},
+28 silly publish   readme: 'func-coffee\n===========\n\nExtensions of Javascript Array to be functional [List](http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.List),\nso you can write more functional Coffeescript codes.\n\n\n## API\n\n### Properties\n* Array.prototype.head\n* Array.prototype.init\n* Array.prototype.isEmpty\n* Array.prototype.last\n* Array.prototype.max\n* Array.prototype.min\n* Array.prototype.nonEmpty\n* Array.prototype.size\n* Array.prototype.tail\n\n### Methods\n* Array.prototype.distinct\n* Array.prototype.exists\n* Array.prototype.flatMap\n* Array.prototype.flatten\n* Array.prototype.groupBy\n* Array.prototype.grouped\n* Array.prototype.shuffle\n* Array.prototype.splitAt\n* Array.prototype.take\n* Array.prototype.toMap\n* Array.prototype.zip\n\n### Coffeescript conventions\n* contains: x in arr\n\n\n## Installation\n\n```bash\n$ npm install func-coffee\n```\n\n## How to use it\n\n```coffeescript\nrequire \'func-coffee\'\n\n[1, 2, 3, 4, 5].shuffle()\n```\n\n## Unit Test\n\n```bash\n$ jasmine-node --coffee --verbose spec/\n```\n\n\n## TBD\n###### combinations\n###### count\n###### drop\n###### dropRight\n###### dropWhile\n###### endsWith\n###### maxBy\n###### minBy\n###### partition\n###### permutations\n###### product\n###### startsWith\n###### sum\n###### takeRight\n###### takeWhile\n###### union\n###### unzip\n\n\n\n\n\n\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '56ed09ae61d89e8d956914e9f6df536c6f70813a',
+28 silly publish   bugs: { url: 'https://github.com/peking2/func-coffee/issues' },
+28 silly publish   homepage: 'https://github.com/peking2/func-coffee',
+28 silly publish   _id: 'func-coffee@0.0.10',
+28 silly publish   _shasum: '781f7ce4708b669ec04066ef4c4c7a23b9f94c9f',
+28 silly publish   _from: '.' }
+29 verbose request where is /func-coffee
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id af8008fad0d3fecd
+32 verbose url raw /func-coffee
+33 verbose url resolving [ 'https://registry.npmjs.org/', './func-coffee' ]
+34 verbose url resolved https://registry.npmjs.org/func-coffee
+35 verbose request where is https://registry.npmjs.org/func-coffee
+36 info trying registry request attempt 1 at 14:11:05
+37 http PUT https://registry.npmjs.org/func-coffee
+38 http 500 https://registry.npmjs.org/func-coffee
+39 info retry will retry, error on last attempt: Error: unexpected status code: 404 : func-coffee
+40 info trying registry request attempt 2 at 14:11:16
+41 http PUT https://registry.npmjs.org/func-coffee
+42 http 500 https://registry.npmjs.org/func-coffee
+43 info retry will retry, error on last attempt: Error: unexpected status code: 404 : func-coffee
+44 info trying registry request attempt 3 at 14:12:17
+45 http PUT https://registry.npmjs.org/func-coffee
+46 http 500 https://registry.npmjs.org/func-coffee
+47 verbose headers { 'content-type': 'application/json',
+47 verbose headers   'cache-control': 'max-age=0',
+47 verbose headers   'content-length': '39',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Wed, 12 Aug 2015 21:12:19 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-ord1735-ORD',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1439413938.761538,VS0,VE465' }
+48 error publish Failed PUT 500
+49 error Error: unexpected status code: 404 : func-coffee
+49 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+49 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+49 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+49 error     at Request.emit (events.js:98:17)
+49 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+49 error     at Request.emit (events.js:117:20)
+49 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+49 error     at IncomingMessage.emit (events.js:117:20)
+49 error     at _stream_readable.js:938:16
+49 error     at process._tickCallback (node.js:419:13)
+50 error If you need help, you may report this *entire* log,
+50 error including the npm and node versions, at:
+50 error     <http://github.com/npm/npm/issues>
+51 error System Darwin 13.1.0
+52 error command "node" "/usr/local/bin/npm" "publish"
+53 error cwd /Users/qwei/Repos/func-coffee
+54 error node -v v0.10.30
+55 error npm -v 1.4.21
+56 verbose exit [ 1, true ]
