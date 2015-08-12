@@ -1,6 +1,6 @@
 {p} = require '../util/log'
 
-if not Array.prototype.func_coffee?
+unless Array.prototype.func_coffee
   Array.prototype.func_coffee = true
   Object.defineProperty Array.prototype, 'head', get: -> this[0]
   Object.defineProperty Array.prototype, 'init', get: -> this[0...-1]
